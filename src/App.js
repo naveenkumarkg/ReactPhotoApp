@@ -2,13 +2,17 @@ import React from "react";
 import { BrowserRouter as Router, Route, Redirect,Switch } from "react-router-dom";
 import "./App.css";
 
+import MainNavigation from './shared/Components/Navigation/MainNavigation';
+
 import User from "./user/pages/Users";
 import NewPlaces from './places/pages/newPlaces';
 
 const App = () => {
   return (
     <Router>
-    <Switch>
+      <MainNavigation />
+  <main>
+  <Switch>
     <Route path="/" exact>
         <User />
       </Route>
@@ -18,6 +22,7 @@ const App = () => {
       {/* <Route path="/" component={User} /> */}
       <Redirect to="/" />
     </Switch>
+  </main>
       
     </Router>
   );
