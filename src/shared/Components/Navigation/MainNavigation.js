@@ -20,11 +20,11 @@ const closeDrawer = ()=>{
   return (
   <React.Fragment>
     {drawIsOpen && <Backdrop onClick={closeDrawer} />}
-        {drawIsOpen ? <SideDrawer>
+      <SideDrawer show={drawIsOpen} onClick={closeDrawer} >
     <nav className="main-navigation__drawer-nav">
       <NavLinks />
     </nav>
-  </SideDrawer>: null}
+  </SideDrawer> 
     <MainHeader>
       <button className="main-navigation__menu-btn" onClick={openDrawer}>
         <span />
