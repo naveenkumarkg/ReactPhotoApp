@@ -11,8 +11,8 @@ const dummyPlaces = [{
     imageUrl:'http://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Empire_State_Building_%28aerial_view%29.jpg/375px-Empire_State_Building_%28aerial_view%29.jpg',
     address:'350 Fifth Avenue Manhattan, New York 10118',
     location:{
-        lat:'404454.36',
-        log:'73590836'
+        lat:'40.445436',
+        log:'73.590836'
     },
     creator:'u1'
 },
@@ -27,7 +27,7 @@ const dummyPlaces = [{
         log:'73590836'
     },
     creator:'u2'
-}]
+}];
 
 const UserPlaces = ()=>{
     const userId = useParams().userId;
