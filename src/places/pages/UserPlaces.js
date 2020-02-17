@@ -1,8 +1,6 @@
 import React from 'react';
 import {useParams} from 'react-router-dom';
-
 import PlaceList from '../components/PlaceList';
-
 
 const dummyPlaces = [{
     id:'p1',
@@ -18,7 +16,7 @@ const dummyPlaces = [{
 },
 {
     id:'p2',
-    title:'Empire State Building',
+    title:'My Next Hotel',
     description:'Best Place on Earth',
     imageUrl:'https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Empire_State_Building_%28aerial_view%29.jpg/375px-Empire_State_Building_%28aerial_view%29.jpg',
     address:'350 Fifth Avenue Manhattan, New York 10118',
